@@ -6,19 +6,19 @@
     color: var(--white-000);
 }
 .section-selector-1 h2 {
-    font-family: 'Nunito', sans-serif;
-    letter-spacing: 0;
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 1px;
     font-weight: 700;
 }
 .section-selector-1 h2 span {
     color: var(--yellow-600);
 }
 .section-selector-1 p {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: var(--font-size-md);
     font-weight: 400;
 }
-.section-selector-1 h4 span {
+.section-selector-1 .badge span {
     background-color: var(--white-000);
     color: var(--black-000);
 }
@@ -30,8 +30,13 @@
 .section-selector-2 h2 span {
     color: var(--red-600);
 }
+.section-selector-2 h2 {
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 1px;
+}
 .section-selector-2 p {
     font-size: var(--font-size-md);
+    font-family: 'Outfit', sans-serif;
 }
 
 .section-selector-3 { background-color: var(--yellow-300); }
@@ -45,3 +50,36 @@
     font-family: 'Inter', sans-serif;
 }
 
+.section-selector-4 {
+    background-color: var(--trend-800);
+}
+.section-selector-4 .badge span {
+    background-color: transparent;
+    color: var(--sky-400);
+}
+.section-selector-4 h2 {
+    font-family: var(--font-monospace);
+    color: #fff;
+}
+.section-selector-4 p {
+    color: #fff;
+}
+
+.section-selector-5 h2, .section-selector-5 h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+.section-selector-5 p {
+    font-family: 'Trocchi', serif;
+    font-weight: 400;
+}
+
+.section-selector-6 h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: var(--font-size-xxxl);
+    letter-spacing: 3px;
+    color: var(--blue-800);
+}
+.section-selector-6 h2 span {
+    color: var(--red-600);
+}
