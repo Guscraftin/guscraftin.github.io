@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Augustin Glorian | Home Page</title>
     <meta name="description" content="Welcome to my website that showcases some of my digital creations.    ">
-    <link rel="stylesheet" href="assets/css/global.css">
-
     <meta name="robots" content="noindex">
+
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
     <!-- Google Analytics -->
     <!-- Google tag (gtag.js) -->
@@ -44,5 +46,22 @@
     <p><a href="portfolio/project-multi-column/index.html">Project multi-column</a></p> 
     <p><a href="portfolio/project-hero/index.html">Project Hero</a></p> 
 
+
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+    "palette": {
+        "popup": {
+        "background": "#000"
+        },
+        "button": {
+        "background": "#f1d600"
+        }
+    },
+    "content": {
+        "href": "https://guscraftin.github.io/privacy.html"
+    }
+    });
+    </script>
 </body>
 </html>
