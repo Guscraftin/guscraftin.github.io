@@ -1,0 +1,11 @@
+/* Add your custom CSS here */
+
+header.theme-dark { background-color: var(--trend-800) }
+section.theme-light { background-color: var(--trend-050) }
+
+
+/* Path: portfolio/index.html */
+header.theme-light { background-color: var(--trend-400) }
+
+
+/* Path: contact/index.html */
