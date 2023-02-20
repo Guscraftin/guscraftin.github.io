@@ -1,6 +1,6 @@
 /* Add your custom CSS here */
 
-header.theme-dark { background-color: var(--trend-800) }
+header.theme-dark, nav.theme-dark { background-color: var(--trend-800) }
 section.theme-light { background-color: var(--trend-050) }
 
 
