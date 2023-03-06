@@ -174,7 +174,41 @@
 
     </footer>
 
-    <script src="../assets/js/menu.js"></script>
+    <script>
+        document.querySelector("#btn-quotes").addEventListener("click", fetchRandomNumQuotes);
+
+        async function fetchRandomNumQuotes() {
+        await fetch('https://type.fit/api/quotes')
+
+            .then(response => {
+                if (response.status !== 200) {
+                    console.log('Error Status Code: ' + response.status);
+                    return;
+                }
+                response.json().then((data) => {
+                    console.log(data);
+                    const lowerNum = getRandomInt(0, data.length-10);
+                    const upperNum = lowerNum + 9;
+                    let html_block = "";
+                    for (i= lowerNum; i < upperNum; i++) {
+                    html_block = html_block + `<div class="col-3"><p><span>“</span>${data[i].text}<span>”</span></p><h3>${data[i].author}</h3></div>`;
+                    document.getElementById("quotes-box").innerHTML = html_block;
+                    }
+                });
+            })
+
+            .catch(error => {
+                // handle any error
+            });
+
+        }
+
+        function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+    </script>
 
 
 </body>
