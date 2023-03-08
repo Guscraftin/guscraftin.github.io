@@ -20,8 +20,32 @@
         let producePrice = 12.99;
         producePrice += 2.99;
 
-        document.write("User Name: " + username);
+        document.write("User Name: " + username + "<br><br>");
         console.log("Produce Price: " + producePrice);
+
+
+        sayGreeting();
+        function sayGreeting() {
+            // Function body code
+            console.log("Hello " + username + "!<br>");
+        }
+
+        document.write(`<b>`);
+        for (let i = 0; i < 20; i++) {
+            if (i === 13) {
+                console.log(i);
+            }
+            document.write(`<b>${i}<b> | `);
+        }
+        document.write(`<br>`);
+
+
+        // create an array of five cars
+        let cars = ["Saab", "Volvo", "BMW", "Audi", "Ford"];
+        cars.forEach(element => {
+            document.write(element + " | ");
+        });
+
 
     </script>
 </body>
